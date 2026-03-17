@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { CheckCircle2, XCircle, Trophy, RotateCcw, Star } from 'lucide-react';
+import { CheckCircle2, XCircle, Trophy, Star } from 'lucide-react';
 import FluidGlass from './FluidGlass';
 import ChapterFooter from './ChapterFooter';
 
@@ -248,11 +248,6 @@ export default function ChapterThree() {
 
     const handleAnswer = (questionId: number, label: string) => {
         setAnswers(prev => ({ ...prev, [questionId]: label }));
-    };
-
-    const resetQuiz = () => {
-        setAnswers({});
-        setPointsAwarded(false);
     };
 
     return (
