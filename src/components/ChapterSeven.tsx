@@ -25,6 +25,8 @@ function TypeRevealText({ text }: { text: string }) {
                         </motion.span>
                     ))}
                 </span>
+            ))}
+        </h1>
     );
 }
 
